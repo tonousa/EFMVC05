@@ -8,7 +8,7 @@ namespace EFMVC05.Models
 {
     public class EFMVCContext : DbContext
     {
-        public EFMVCContext() : base("MyFinance") { }
+        //public EFMVCContext() : base("MyFinance") { }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Expense> Expenses { get; set; }
     }

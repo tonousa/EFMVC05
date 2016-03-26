@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EFMVC05.Models;
+using System;
 
 namespace EFMVC05.Infrastructure
 {
-    interface IDatabaseFactory
+    public interface IDatabaseFactory : IDisposable
     {
+        EFMVCContext Get();
     }
 }
